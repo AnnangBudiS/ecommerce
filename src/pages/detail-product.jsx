@@ -56,7 +56,7 @@ export default function ProductDetail() {
           ))}
         </Swiper>
       </div>
-      <div>
+      <div className="mb-5 md:mb-0">
         <h2 className="text-2xl font-bold text-gray-700">{detail?.title}</h2>
         <div className="flex gap-2">
           <span>{detail?.stock}</span>.

@@ -3,7 +3,7 @@ import { currencyFormatter } from "../utils/Formatting";
 export default function CartItem({ product, onDecrease, onIncrease }) {
   return (
     <li className="bg-gray-300 p-5 rounded-xl shadow">
-      <article className="flex gap-4 items-center justify-between rounded-xl bg-gray-50 p-5">
+      <article className="flex flex-col gap-4 md:flex-row md:items-center justify-between rounded-xl bg-gray-50 p-5">
         <div className="flex items-center gap-5 w-1/2 font-bold text-gray-700">
           <img src={product.thumbnail} alt={product.title} className="w-20" />
           <h2 className="max-w-md">{product.title}</h2>

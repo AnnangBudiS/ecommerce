@@ -78,7 +78,7 @@ export default function Product() {
       <div className="my-5">
         <Swiper
           watchSlidesProgress={true}
-          slidesPerView={5}
+          slidesPerView={2}
           breakpoints={{
             500: {
               slidesPerView: 2,
@@ -112,7 +112,7 @@ export default function Product() {
         {isLoading ? (
           <div>Loading data ... </div>
         ) : (
-          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 mb-10 gap-5">
+          <ul className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4  mt-5 mb-10 gap-5">
             {" "}
             {product.map((item) => (
               <ProductItem key={item.id} product={item} />

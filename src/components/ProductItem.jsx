@@ -13,7 +13,7 @@ export default function ProductItem({ product }) {
   }
 
   return (
-    <li className="w-48">
+    <li className="w-40 md:w-48">
       <article className="shadow rounded-md">
         <Link to={`/products/${product.id}/detail`}>
           <img
